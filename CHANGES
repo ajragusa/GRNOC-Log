@@ -1,0 +1,13 @@
+GRNOC-Log 1.0.2  - Mar 26 2013
+===============================
+Features:
+ * ISSUE=5695 Changed new method to use Log4Perl's init_once method instead of init
+
+GRNOC-Log 1.0.1  - Sept 10 2012
+===============================
+Also fixed a taint problem in Log::Dispatch::Syslog
+Making GRNOC-Log follow all of our requirements
+
+GRNOC-Log 1.0.0  - July 10 2012
+================================
+First Release on unsuspecting world!

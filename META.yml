@@ -1,0 +1,25 @@
+---
+abstract: 'Provides an abstraction around logging mechanisms to make  Logging super easy for developers'
+author:
+  - 'GRNOC System Engineering <syseng@grnoc.iu.edu>'
+build_requires:
+  ExtUtils::MakeMaker: '0'
+configure_requires:
+  ExtUtils::MakeMaker: '0'
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.142690'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: GRNOC-Log
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Log::Dispatch::Syslog: '0'
+  Log::Log4perl: '0'
+  Test::More: '0'
+  Test::Pod::Coverage: '0'
+version: v1.0.2
