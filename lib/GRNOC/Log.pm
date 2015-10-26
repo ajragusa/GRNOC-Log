@@ -1,7 +1,14 @@
-#!/usr/bin/perl
+#--------------------------------------------------------------------
+#----- Copyright(C) 2015 The Trustees of Indiana University
+#--------------------------------------------------------------------
+#----- A logging wrapper built on top of Log4perl
+#-----
+#---------------------------------------------------------------------
+
+package GRNOC::Log;
+
 use strict;
 use warnings;
-package GRNOC::Log;
 
 require Exporter;
 
