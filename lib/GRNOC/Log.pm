@@ -113,6 +113,7 @@ logs an error message
 sub log_error{
     my @log_details = @_;
     my ($pkg, $filename, $line) = caller;
+    local $Log::Log4perl::caller_depth = $Log::Log4perl::caller_depth + 1;
     my $logger = Log::Log4perl->get_logger($pkg);
     
     $logger->error(@log_details);   
@@ -129,6 +130,7 @@ logs a warning message
 sub log_warn{
     my @log_details = @_;
     my ($pkg, $filename, $line) = caller;
+    local $Log::Log4perl::caller_depth = $Log::Log4perl::caller_depth + 1;
     my $logger = Log::Log4perl->get_logger($pkg);
 
     $logger->warn(@log_details);
@@ -145,6 +147,7 @@ logs an info message
 sub log_info{
     my @log_details = @_;
     my ($pkg, $filename, $line) = caller;
+    local $Log::Log4perl::caller_depth = $Log::Log4perl::caller_depth + 1;
     my $logger = Log::Log4perl->get_logger($pkg);
 
     $logger->info(@log_details);
@@ -162,6 +165,7 @@ logs a debug message
 sub log_debug{
     my @log_details = @_;
     my ($pkg, $filename, $line) = caller;
+    local $Log::Log4perl::caller_depth = $Log::Log4perl::caller_depth + 1;
     my $logger = Log::Log4perl->get_logger($pkg);
 
     $logger->debug(@log_details);
@@ -194,6 +198,7 @@ sub log{
 
     #find the right logger
     my ($pkg, $filename, $line) = caller;
+    local $Log::Log4perl::caller_depth = $Log::Log4perl::caller_depth + 1;
     my $logger = Log::Log4perl->get_logger($pkg);
 
     if ( $severity eq "info" ) {
