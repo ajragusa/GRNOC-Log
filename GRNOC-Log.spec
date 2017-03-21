@@ -13,7 +13,7 @@
 
 name:      perl-GRNOC-Log
 summary:   GRNOC-Log - perl modules should
-version:   1.0.2
+version:   1.0.3
 release:   1%{?dist}
 vendor:    GRNOC System Engineering <syseng@grnoc.iu.edu>
 packager:  Arix International <cpan2rpm@arix.com>
