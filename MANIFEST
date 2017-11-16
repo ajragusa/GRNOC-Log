@@ -2,8 +2,12 @@ CHANGES
 conf/config.conf
 GRNOC-Log.spec
 lib/GRNOC/Log.pm
+lib/GRNOC/Log/Trapper.pm
+LICENSE
 Makefile.PL
 MANIFEST			This list of files
+META.json			Module JSON meta-data (added by MakeMaker)
+META.yml			Module YAML meta-data (added by MakeMaker)
 t/00-load.t
 t/hierarchy.t
 t/log.t
@@ -11,5 +15,3 @@ t/pod.t
 t/pod_coverage.t
 t/TEST
 t/Tester.pm
-META.yml                                 Module YAML meta-data (added by MakeMaker)
-META.json                                Module JSON meta-data (added by MakeMaker)
